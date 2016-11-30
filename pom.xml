@@ -24,18 +24,15 @@
     </dependencies>
 
     <build>
+    	<finalName>${artifactId}</finalName>
     	<pluginManagement>    	
 	        <plugins>
 	            <plugin>
-	                <groupId>org.apache.maven.plugins</groupId>
-	                <artifactId>maven-compiler-plugin</artifactId>
-	                <version>3.1</version>
+	                <groupId>org.jboss.as.plugins</groupId>
+	                <artifactId>jboss-as-maven-plugin</artifactId>
+	                <version>7.5.Final</version>
 	                <configuration>
-	                    <source>1.7</source>
-	                    <target>1.7</target>
-	                    <compilerArguments>
-	                        <endorseddirs>${endorsed.dir}</endorseddirs>
-	                    </compilerArguments>
+	                	<jbossHome>/home/marcelo/jboss-as-7.1.1.Final</jbossHome>
 	                </configuration>
 	            </plugin>
 	            <plugin>
